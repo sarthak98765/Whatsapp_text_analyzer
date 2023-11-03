@@ -19,9 +19,7 @@ if uploaded_file is not None:
 
     # fetch unique users
     user_list = df['User'].unique().tolist()
-    
-    user_list.remove('whatsapp notification')
-    
+
     user_list.sort()
     user_list.insert(0, "Overall")
     
